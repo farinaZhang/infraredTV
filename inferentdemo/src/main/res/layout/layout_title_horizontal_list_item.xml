@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/text_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingRight="41.8dp"
+        android:text="本地"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:letterSpacing="-0.11"/>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">infrerentTest</string>
+    <string name="ir_send">发送</string>
+    <string name="power">电源</string>
+    <string name="vollume_mute">静音</string>
+    <string name="vollume_up">音量+</string>
+    <string name="vollume_down">音量-</string>
+    <string name="ir_get_freqs">频率</string>
+    <string name="search_input_hit_text">搜索电视节目/频道</string>
+
+    <string-array name="play_type_array">
+        <item>热门</item>
+        <item>本地</item>
+        <item>央视</item>
+        <item>影视</item>
+        <item>新闻</item>
+        <item>体育</item>
+        <item>财经</item>
+        <item>综艺</item>
+        <item>生活</item>
+        <item>科教</item>
+        <item>音乐</item>
+        <item>少儿</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="search_type_array">
+        <item>正在播放</item>
+        <item>播出时间</item>
+    </string-array>
+
+    <string-array name="keyboard_num_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>清除</item>
+        <item>0</item>
+        <item>确认</item>
+    </string-array>
+
+    <string-array name="search_try_array">
+        <item>东方卫视</item>
+        <item>湖南卫视</item>
+        <item>向往的生活</item>
+        <item>安徽卫视</item>
+        <item>CCTV1</item>
+        <item>楚乔传</item>
+    </string-array>
+
+    <string-array name="tab_plat_time">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+
+    </string-array>
+
+
+</resources>

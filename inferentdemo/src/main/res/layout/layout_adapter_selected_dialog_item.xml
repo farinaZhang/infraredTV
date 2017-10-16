@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="49dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="29dp"
+        android:gravity="left|center_vertical"
+        android:letterSpacing="-0.14"
+        android:singleLine="true"
+        android:text="12:35"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:gravity="right|center_vertical"
+        android:letterSpacing="-0.14"
+        android:singleLine="true"
+        android:text="正在播出"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginRight="98dp"
+        android:layout_toLeftOf="@id/state"
+        android:layout_toRightOf="@id/time"
+        android:ellipsize="marquee"
+        android:gravity="left|center_vertical"
+        android:letterSpacing="-0.01"
+        android:singleLine="true"
+        android:text="湖南卫视"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+</RelativeLayout>

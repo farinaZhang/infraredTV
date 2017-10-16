@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/search_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_item"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/history_eara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47.3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="9.3dp"
+                        android:layout_marginLeft="15dp"
+                        android:letterSpacing="-0.01"
+                        android:text="搜索历史"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/clear_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:letterSpacing="-0.01"
+                        android:paddingBottom="9.3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="9.3dp"
+                        android:text="清空历史"
+                        android:textColor="#e56c6c"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="#cccccc" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/history_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.01"
+                android:text="你可以试试"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#cccccc" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/try_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14.3dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

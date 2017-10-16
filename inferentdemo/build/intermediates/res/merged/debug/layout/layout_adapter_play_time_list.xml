@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48.3dp">
+    <TextView android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:letterSpacing="-0.01"
+        android:text="12:35"/>
+    <TextView android:id="@+id/channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/time"
+        android:layout_marginLeft="14dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:letterSpacing="-0.01"
+        android:text="湖南卫视"/>
+    <TextView android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/channel"
+        android:layout_marginLeft="14dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:letterSpacing="-0.01"
+        android:text="楚乔传 (10) (重播)"/>
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#cccccc"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

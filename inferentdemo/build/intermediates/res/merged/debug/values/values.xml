@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keyboard_num_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>清除</item>
+        <item>0</item>
+        <item>确认</item>
+    </string-array>
+    <string-array name="play_type_array">
+        <item>热门</item>
+        <item>本地</item>
+        <item>央视</item>
+        <item>影视</item>
+        <item>新闻</item>
+        <item>体育</item>
+        <item>财经</item>
+        <item>综艺</item>
+        <item>生活</item>
+        <item>科教</item>
+        <item>音乐</item>
+        <item>少儿</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="search_try_array">
+        <item>东方卫视</item>
+        <item>湖南卫视</item>
+        <item>向往的生活</item>
+        <item>安徽卫视</item>
+        <item>CCTV1</item>
+        <item>楚乔传</item>
+    </string-array>
+    <string-array name="search_type_array">
+        <item>正在播放</item>
+        <item>播出时间</item>
+    </string-array>
+    <string-array name="special_solar_term_dates">
+        <item>19840723|19840722|13</item>
+        <item>19841221|19841222|23</item>
+        <item>20130203|20130204|2</item>
+        <item>20130723|20130722|13</item>
+        <item>20131221|20131222|23</item>
+        <item>20140305|20140306|4</item>
+        <item>20150105|20150106|0</item>
+        <item>20161206|20161207|22</item>
+        <item>20170723|20170722|13</item>
+        <item>20171221|20171222|23</item>
+        <item>20180218|20180219|3</item>
+        <item>20180320|20180321|5</item>
+        <item>20190622|20190621|11</item>
+        <item>20200707|20200706|12</item>
+        <item>20200823|20200822|15</item>
+        <item>20201206|20201207|22</item>
+        <item>20220218|20220219|3</item>
+        <item>20230622|20230621|11</item>
+        <item>20231023|20231024|19</item>
+        <item>20231107|20231108|20</item>
+        <item>20240823|20240822|15</item>
+        <item>20260606|20260605|10</item>
+        <item>20300606|20300605|10</item>
+        <item>20350506|20350505|8</item>
+    </string-array>
+    <string-array name="tab_plat_time">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+
+    </string-array>
+    <color name="ListItemAnswerTextColor">#353535</color>
+    <color name="ListItemSpeakTextColor">#ffffff</color>
+    <color name="app_bg">#193144</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorText">#9b9b9b</color>
+    <color name="color_search_item">#ececec</color>
+    <color name="color_title_device_name">#ffffff</color>
+    <color name="currColor">#ff44</color>
+    <color name="mainpage_title_backcolor">#1a3143</color>
+    <color name="noCurrColor">#333333</color>
+    <declare-styleable name="Search_View"><attr format="dimension" name="textSizeSearch"/><attr format="color" name="textColorSearch"/><attr format="string" name="textHintSearch"/><attr format="integer" name="searchBlockHeight"/><attr format="color" name="searchBlockColor"/></declare-styleable>
+    <declare-styleable name="WeatherTypefacedTextView"><attr format="string" name="typeface"/></declare-styleable>
+    <declare-styleable name="playImg"><attr format="dimension" name="imageHeight"/><attr format="dimension" name="imageWidth"/></declare-styleable>
+    <declare-styleable name="voiceView"><attr format="color" name="middleLine"/><attr format="dimension" name="middleLineHeight"/><attr format="color" name="voiceLine"/><attr format="integer" name="lineSpeed"/><attr format="dimension" name="rectWidth"/><attr format="dimension" name="rectSpace"/><attr format="dimension" name="rectInitHeight"/><attr format="float" name="maxVolume"/><attr name="viewMode"><enum name="line" value="0"/><enum name="rect" value="1"/></attr><attr name="sensibility"><enum name="one" value="1"/><enum name="two" value="2"/><enum name="three" value="3"/><enum name="four" value="4"/><enum name="five" value="5"/></attr><attr name="fineness"><enum name="one" value="1"/><enum name="two" value="2"/><enum name="three" value="3"/></attr></declare-styleable>
+    <dimen name="ListItemTextSize">14.6sp</dimen>
+    <dimen name="MainVoiceListItemSpeakPaddingBottom">9dp</dimen>
+    <dimen name="MainVoiceListItemSpeakPaddingLeft">9dp</dimen>
+    <dimen name="MainVoiceListItemSpeakPaddingRight">13.6dp</dimen>
+    <dimen name="MainVoiceListItemSpeakPaddingTop">9dp</dimen>
+    <dimen name="MainVoicelistItemMarginLeft">9.7dp</dimen>
+    <dimen name="MainVoicelistItemMarginRight">64.3dp</dimen>
+    <dimen name="MainVoicelistItemMarginTop">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_padding_top">24dp</dimen>
+    <dimen name="history_spacing">10dp</dimen>
+    <dimen name="input_box_height">28dp</dimen>
+    <dimen name="input_box_margin_side">15dp</dimen>
+    <dimen name="keyboard_spacing">25dp</dimen>
+    <dimen name="keyboard_textsize_number">34sp</dimen>
+    <dimen name="keyboard_textsize_text">20sp</dimen>
+    <dimen name="mainpage_title_height">40dp</dimen>
+    <dimen name="search_item_height">40dp</dimen>
+    <dimen name="title_tab_item_height">40dp</dimen>
+    <string name="app_name">infrerentTest</string>
+    <string name="ir_get_freqs">频率</string>
+    <string name="ir_send">发送</string>
+    <string name="power">电源</string>
+    <string name="search_input_hit_text">搜索电视节目/频道</string>
+    <string name="vollume_down">音量-</string>
+    <string name="vollume_mute">静音</string>
+    <string name="vollume_up">音量+</string>
+</resources>

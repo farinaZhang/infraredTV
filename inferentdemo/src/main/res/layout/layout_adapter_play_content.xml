@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sample.inferentdemo.widget.TvProgramReview
+        android:id="@+id/item"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:imageWidth="460dp"
+        app:imageHeight="105dp" />
+</RelativeLayout>

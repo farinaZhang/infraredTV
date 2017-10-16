@@ -1,0 +1,931 @@
+[
+    {
+        "outputFile": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 15,
+                    "endColumn": 19,
+                    "endOffset": 393
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 903,
+                        "endLine": 44,
+                        "endColumn": 19,
+                        "endOffset": 1254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 398,
+                    "endLine": 30,
+                    "endColumn": 19,
+                    "endOffset": 767
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endLine": 24,
+                        "endColumn": 19,
+                        "endOffset": 773
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 772,
+                    "endLine": 38,
+                    "endColumn": 19,
+                    "endOffset": 987
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1262,
+                        "endLine": 53,
+                        "endColumn": 19,
+                        "endOffset": 1484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 992,
+                    "endLine": 42,
+                    "endColumn": 19,
+                    "endOffset": 1103
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 781,
+                        "endLine": 29,
+                        "endColumn": 19,
+                        "endOffset": 895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 1108,
+                    "endLine": 68,
+                    "endColumn": 19,
+                    "endOffset": 2175
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\arrays.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endLine": 28,
+                        "endColumn": 19,
+                        "endOffset": 1151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 2180,
+                    "endLine": 78,
+                    "endColumn": 19,
+                    "endOffset": 2404
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 1492,
+                        "endLine": 64,
+                        "endColumn": 19,
+                        "endOffset": 1725
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 2409,
+                    "endColumn": 57,
+                    "endOffset": 2462
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 57,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 2467,
+                    "endColumn": 56,
+                    "endOffset": 2519
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 56,
+                        "endOffset": 359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 2524,
+                    "endColumn": 40,
+                    "endOffset": 2560
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 40,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 2565,
+                    "endColumn": 45,
+                    "endOffset": 2606
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 199,
+                        "endColumn": 45,
+                        "endOffset": 240
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 2611,
+                    "endColumn": 49,
+                    "endOffset": 2656
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 610,
+                        "endColumn": 49,
+                        "endOffset": 655
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 2661,
+                    "endColumn": 46,
+                    "endOffset": 2703
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 562,
+                        "endColumn": 46,
+                        "endOffset": 604
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2708,
+                    "endColumn": 46,
+                    "endOffset": 2750
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 46,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 2755,
+                    "endColumn": 50,
+                    "endOffset": 2801
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 50,
+                        "endOffset": 193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 2806,
+                    "endColumn": 43,
+                    "endOffset": 2845
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 661,
+                        "endColumn": 43,
+                        "endOffset": 700
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 2850,
+                    "endColumn": 51,
+                    "endOffset": 2897
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 446,
+                        "endColumn": 51,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 2902,
+                    "endColumn": 57,
+                    "endOffset": 2955
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 499,
+                        "endColumn": 57,
+                        "endOffset": 552
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 2960,
+                    "endColumn": 41,
+                    "endOffset": 2997
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 708,
+                        "endColumn": 41,
+                        "endOffset": 745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3002,
+                    "endColumn": 58,
+                    "endOffset": 3056
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 386,
+                        "endColumn": 58,
+                        "endOffset": 440
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3061,
+                    "endColumn": 45,
+                    "endOffset": 3102
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 751,
+                        "endColumn": 45,
+                        "endOffset": 792
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 4448,
+                    "endColumn": 49,
+                    "endOffset": 4493
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 658,
+                        "endColumn": 49,
+                        "endOffset": 703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 4498,
+                    "endColumn": 65,
+                    "endOffset": 4559
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 591,
+                        "endColumn": 65,
+                        "endOffset": 652
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 4564,
+                    "endColumn": 63,
+                    "endOffset": 4623
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 393,
+                        "endColumn": 63,
+                        "endOffset": 452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 4628,
+                    "endColumn": 67,
+                    "endOffset": 4691
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 458,
+                        "endColumn": 67,
+                        "endOffset": 521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 4696,
+                    "endColumn": 62,
+                    "endOffset": 4754
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 527,
+                        "endColumn": 62,
+                        "endOffset": 585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 4759,
+                    "endColumn": 59,
+                    "endOffset": 4814
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 59,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 4819,
+                    "endColumn": 61,
+                    "endOffset": 4876
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 269,
+                        "endColumn": 61,
+                        "endOffset": 326
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 4881,
+                    "endColumn": 57,
+                    "endOffset": 4934
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 332,
+                        "endColumn": 57,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4939,
+                    "endColumn": 57,
+                    "endOffset": 4992
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 90,
+                        "endColumn": 57,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4997,
+                    "endColumn": 55,
+                    "endOffset": 5048
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 149,
+                        "endColumn": 55,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 5053,
+                    "endColumn": 46,
+                    "endOffset": 5095
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 711,
+                        "endColumn": 46,
+                        "endOffset": 753
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 5100,
+                    "endColumn": 46,
+                    "endOffset": 5142
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1205,
+                        "endColumn": 46,
+                        "endOffset": 1247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 5147,
+                    "endColumn": 47,
+                    "endOffset": 5190
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 935,
+                        "endColumn": 47,
+                        "endOffset": 978
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 5195,
+                    "endColumn": 52,
+                    "endOffset": 5243
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 984,
+                        "endColumn": 52,
+                        "endOffset": 1032
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 5248,
+                    "endColumn": 47,
+                    "endOffset": 5291
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1040,
+                        "endColumn": 47,
+                        "endOffset": 1083
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 5296,
+                    "endColumn": 55,
+                    "endOffset": 5347
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1093,
+                        "endColumn": 55,
+                        "endOffset": 1144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 5352,
+                    "endColumn": 53,
+                    "endOffset": 5401
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1150,
+                        "endColumn": 53,
+                        "endOffset": 1199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 5406,
+                    "endColumn": 52,
+                    "endOffset": 5454
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 776,
+                        "endColumn": 52,
+                        "endOffset": 824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 5459,
+                    "endColumn": 49,
+                    "endOffset": 5504
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 830,
+                        "endColumn": 49,
+                        "endOffset": 875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 5509,
+                    "endColumn": 52,
+                    "endOffset": 5557
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 881,
+                        "endColumn": 52,
+                        "endOffset": 929
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 5562,
+                    "endColumn": 50,
+                    "endOffset": 5608
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 50,
+                        "endOffset": 63
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 5613,
+                    "endColumn": 43,
+                    "endOffset": 5652
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 282,
+                        "endColumn": 43,
+                        "endOffset": 321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 5657,
+                    "endColumn": 38,
+                    "endOffset": 5691
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 69,
+                        "endColumn": 38,
+                        "endOffset": 103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 5696,
+                    "endColumn": 36,
+                    "endOffset": 5728
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 36,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 5733,
+                    "endColumn": 59,
+                    "endOffset": 5788
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 327,
+                        "endColumn": 59,
+                        "endOffset": 382
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5793,
+                    "endColumn": 44,
+                    "endOffset": 5833
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 236,
+                        "endColumn": 44,
+                        "endOffset": 276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5838,
+                    "endColumn": 43,
+                    "endOffset": 5877
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 43,
+                        "endOffset": 186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5882,
+                    "endColumn": 42,
+                    "endOffset": 5920
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endColumn": 42,
+                        "endOffset": 230
+                    }
+                }
+            }
+        ]
+    }
+]

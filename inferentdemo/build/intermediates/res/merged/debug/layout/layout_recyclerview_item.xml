@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--android:background="@android:color/transparent"-->
+    <com.sample.inferentdemo.imain.UserSpeekView
+        android:id="@+id/speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/MainVoicelistItemMarginTop"
+        android:layout_marginRight="@dimen/MainVoicelistItemMarginLeft"
+        android:layout_marginLeft="@dimen/MainVoicelistItemMarginRight"
+        android:layout_alignParentRight="true" />
+
+    <com.sample.inferentdemo.imain.UserAnswerView
+        android:id="@+id/answer"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainVoicelistItemMarginTop"
+        android:layout_marginRight="@dimen/MainVoicelistItemMarginRight"
+        android:layout_marginLeft="@dimen/MainVoicelistItemMarginLeft"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

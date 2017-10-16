@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <TextView android:id="@+id/str_text"
+       android:layout_width="wrap_content"
+       android:layout_height="32dp"
+       android:textSize="14sp"
+       android:textColor="#262626"
+       android:letterSpacing="-0.01"
+       android:text="东方卫视"
+       android:gravity="center"
+       android:background="@drawable/search_try_text_background"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"/>
+</RelativeLayout>

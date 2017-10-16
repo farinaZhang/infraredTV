@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <!--tab 类型栏-->
+    <RelativeLayout android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5">
+        <com.sample.inferentdemo.widget.HorizontalListView
+            android:id="@+id/title_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_tab_item_height"
+            android:background="#f5f5f5"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <ImageView android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_view"
+        android:src="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_recyleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</RelativeLayout>

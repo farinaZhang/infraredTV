@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WeatherTypefacedTextView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="Search_View">
+        <attr name="textSizeSearch" format="dimension"  />
+        <attr name="textColorSearch" format="color" />
+        <attr name="textHintSearch" format="string" />
+        <attr name="searchBlockHeight" format="integer" />
+        <attr name="searchBlockColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="playImg">
+        <attr name="imageHeight" format="dimension"/>
+        <attr name="imageWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

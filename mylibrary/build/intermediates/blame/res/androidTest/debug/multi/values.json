@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\mylibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 837,
+                    "endColumn": 47,
+                    "endOffset": 880
+                },
+                "from": {
+                    "file": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\mylibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 837,
+                        "endColumn": 47,
+                        "endOffset": 880
+                    }
+                }
+            }
+        ]
+    }
+]

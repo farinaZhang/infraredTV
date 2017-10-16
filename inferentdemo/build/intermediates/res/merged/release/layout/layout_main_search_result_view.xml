@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <!--tab 类型栏-->
+    <RelativeLayout android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f5f5f5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/playing"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="-0.01"
+                android:text="正在播放"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/play_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="-0.01"
+                android:text="播出时间"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="#d2d2d2" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_view"
+        android:src="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_recyleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <!--<com.sample.inferentdemo.widget.PlayDateView
+        android:id="@+id/playdataview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:background="#ffffff" />-->
+    <com.sample.inferentdemo.widget.PlayDateViewExt
+        android:id="@+id/playdataview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:background="#ffffff" />
+</RelativeLayout>

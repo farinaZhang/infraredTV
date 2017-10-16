@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\search_try_text_background.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\search_try_text_background.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\play_progress_bar.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\play_progress_bar.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\radiu_rect_background.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\radiu_rect_background.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\control_ok_blue_circle_bg.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\control_ok_blue_circle_bg.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\input_box_background.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\input_box_background.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\other_control_circle_bg.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\other_control_circle_bg.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\drawable\\keyboard_background.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\drawable\\keyboard_background.xml"
+    }
+]

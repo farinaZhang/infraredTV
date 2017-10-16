@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/mainpage_title_backcolor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.01"
+        android:text="说出你想搜索的频道或节目"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"/>
+
+    <!--<ImageView
+        android:id="@+id/image_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68.8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/voiceprint" />-->
+
+    <com.carlos.voiceline.mylibrary.VoiceLineView
+        android:id="@+id/voiceLine"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        voiceView:maxVolume="200"
+        voiceView:middleLine="#f00"
+        voiceView:middleLineHeight="1dp"
+        voiceView:fineness="three"
+        voiceView:rectSpace="2dp"
+        voiceView:rectWidth="5dp"
+        voiceView:sensibility="four"
+        voiceView:viewMode="line"
+        voiceView:lineSpeed="90"
+        voiceView:voiceLine="#fff"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.01"
+        android:text="上滑取消搜索"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <ImageView
+        android:id="@+id/icon_speak_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icn_microphone" />
+</RelativeLayout>

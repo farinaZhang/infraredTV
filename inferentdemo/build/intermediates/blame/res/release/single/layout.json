@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_keyboard_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_keyboard_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\activity_other_setings.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\activity_other_setings.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_play_time_title_item.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_play_time_title_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_recylcler_item_answer.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_recylcler_item_answer.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\consumer_ir.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\consumer_ir.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_search_history.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_search_history.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_keybord.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_keybord.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_main_activity.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_main_activity.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_play_time_list.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_play_time_list.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_play_time_tab.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_play_time_tab.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_play_content.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_play_content.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_speaking_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_speaking_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_main_search_result_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_main_search_result_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_recyclerview_item.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_recyclerview_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_play_date_recycleview.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_play_date_recycleview.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\custom_tip_dialog.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\custom_tip_dialog.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\activity_operator_settings.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\activity_operator_settings.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\activity_first_operator_settings.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\activity_first_operator_settings.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_search_try.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_search_try.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_main_show_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_main_show_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_adapter_selected_dialog_item.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_adapter_selected_dialog_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_search_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_search_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_tvtrogram_review.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_tvtrogram_review.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_play_date_view.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_play_date_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\play_list_pop_dialog.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\play_list_pop_dialog.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_play_date_view_ext.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_play_date_view_ext.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_fragment_mainpage.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_fragment_mainpage.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\activity_main_setings.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\activity_main_setings.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_title_horizontal_list_item.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_title_horizontal_list_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_head_play_content.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_head_play_content.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\layout\\layout_recylcler_item_speak.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\layout\\layout_recylcler_item_speak.xml"
+    }
+]

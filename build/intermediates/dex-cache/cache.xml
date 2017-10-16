@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\cling-core-2.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="767954a4d738b8c77606d19a6c0255193651ccba">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\cling-core-2.1.1_ec53741f09a1a75a04861bbc8dbb23004d116aee.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudio\Android\Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\gson-2.2.4_8899407cbe5a45d2ab346320f8c3c26de33fd35f.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1dc1f63cee098b27db60b9a2833fd7ca58f89636">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\android-support-v4_44fdddbd92ef06ff137cf65ec36dab3d3d64397c.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\cling-support-2.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4b24a331452a3b4b078954490bf7430459495f6c">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\cling-support-2.1.1_49995e01e839d43c2cc948b559f7c83c05744412.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\exploded-aar\infraredTV_Android_V\mylibrary\1.0.7\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7e8ab9208bc8318e02a17530ddb900d93554c8f9">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\infraredTV_Android_V-mylibrary-1.0.7_ef742b1174b0e570a142c703d20f6b2da49abe8f.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d2bc37c624c52ad6502a03c951f640a820ed3a07">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\android-support-v7-recyclerview_6d1d0794a945a99b04c4fc156d4472731c700b30.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\butterknife-5.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="34f9a9915c4ac33f97a9339f4caad41cb02638d8">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\butterknife-5.0.0_accd5c3bf70c00a4f7720d6bb1843111cd2e6fd1.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\libs\voicesdk_android_1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="384856d2776af4c144ffa87bb55e482af60ea8c7">
+        <dex dex="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\intermediates\pre-dexed\release\voicesdk_android_1.4_b72503aec0702c573f24c26daf69146ff2dd2321.jar" />
+    </item>
+
+</items>

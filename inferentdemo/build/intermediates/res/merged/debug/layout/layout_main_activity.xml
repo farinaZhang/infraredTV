@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainpage_title_backcolor"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/main_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainpage_title_backcolor"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainpage_title_height"
+            android:background="@color/mainpage_title_backcolor">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="14dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="9dp"
+                android:src="@drawable/icn_side_pull" />
+
+            <TextView
+                android:id="@+id/txt_select_devie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="5.5dp"
+                android:drawableRight="@drawable/icn_spresd"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.01"
+                android:text="东方有线"
+                android:textColor="@color/color_title_device_name"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_item_height"
+            android:background="@color/color_search_item">
+
+            <TextView
+                android:id="@+id/txt_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:letterSpacing="-0.01"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:text="取消"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/search_input_box"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/input_box_margin_side"
+                android:layout_toLeftOf="@id/txt_search_cancel"
+                android:background="@drawable/input_box_background"
+                android:gravity="center_vertical"
+                android:hint="@string/search_input_hit_text"
+                android:imeOptions="actionSearch"
+                android:letterSpacing="-0.01"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/search_input_box"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1.7dp"
+                android:padding="7dp"
+                android:src="@drawable/icn_search" />
+
+            <ImageView
+                android:id="@+id/icn_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/search_input_box"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:padding="5.2dp"
+                android:src="@drawable/icn_keyboard" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_top_view"
+        android:background="@color/colorDefault"
+        android:paddingBottom="40dp">
+
+        <com.sample.inferentdemo.widget.MainShowView
+            android:id="@+id/submainview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.sample.inferentdemo.widget.searchview.SearchView
+            android:id="@+id/subSearchview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.sample.inferentdemo.widget.MainSearchResultView
+            android:id="@+id/subSearchMainview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:layout_alignParentBottom="true"
+        android:src="#f8f8f8" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignTop="@id/bottom_bg"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="1"
+            android:src="@drawable/icn_power" />
+
+        <ImageView
+            android:id="@+id/icon_volumn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:src="@drawable/icn_volume" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/icon_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_microphone"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+            <com.sample.inferentdemo.widget.RotateView
+                android:id="@+id/speak_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/icon_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:src="@drawable/icn_change" />
+
+        <ImageView
+            android:id="@+id/icon_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icn_more" />
+
+
+    </LinearLayout>
+
+
+    <com.sample.inferentdemo.widget.PlayDateView
+        android:id="@+id/play_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_top_view"
+        android:background="#fff"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/speak_recording_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_speaking_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

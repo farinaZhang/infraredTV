@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\cycle_translate_anim.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\cycle_translate_anim.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_center_to_left.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_center_to_left.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_center_to_right.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_center_to_right.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_down_to_up.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_down_to_up.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_right_to_center.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_right_to_center.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_up_to_down.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_up_to_down.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\translate_left_to_center.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\translate_left_to_center.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\release\\anim\\no_anim.xml",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\anim\\no_anim.xml"
+    }
+]

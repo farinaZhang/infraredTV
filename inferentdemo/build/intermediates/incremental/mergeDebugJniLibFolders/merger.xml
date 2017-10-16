@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\src\main\jniLibs"><file name="armeabi/libspeex.so" path="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\src\main\jniLibs\armeabi\libspeex.so"/></source></dataSet><dataSet config="debug"><source path="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\src\debug\jniLibs"/></dataSet></merger>

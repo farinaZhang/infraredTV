@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\debug\\raw\\a.wav",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\raw\\a.wav"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\build\\intermediates\\res\\merged\\debug\\raw\\pw.wav",
+        "source": "E:\\AndroidStudioProjects\\infraredTV_Android_V\\inferentdemo\\src\\main\\res\\raw\\pw.wav"
+    }
+]

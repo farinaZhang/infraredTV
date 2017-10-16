@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sample.inferentdemo.widget.HorizontalListView
+            android:id="@+id/title_tab_item"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff"
+            android:layout_marginLeft="35dp"
+            />
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#cccccc"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

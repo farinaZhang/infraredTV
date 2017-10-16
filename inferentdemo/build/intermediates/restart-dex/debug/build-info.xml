@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="23330653866852" >
+
+    <task
+        name="javac"
+        duration="732" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="604" />
+    <task
+        name="verifier"
+        duration="322" />
+
+    <artifact
+        location="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\outputs\apk\inferentdemo-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="23330653866852" >
+        <artifact
+            location="E:\AndroidStudioProjects\infraredTV_Android_V\inferentdemo\build\outputs\apk\inferentdemo-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

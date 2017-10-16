@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#193144</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ListItemAnswerTextColor">#353535</color>
+    <color name="ListItemSpeakTextColor">#ffffff</color>
+
+
+    <!-- 首页 -->
+    <color name="mainpage_title_backcolor">#1a3143</color>
+    <color name="color_search_item">#ececec</color>
+    <color name="color_title_device_name">#ffffff</color>
+
+
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9b9b9b</color>
+
+    <color name="currColor">#ff44</color>
+    <color name="noCurrColor">#333333</color>
+</resources>

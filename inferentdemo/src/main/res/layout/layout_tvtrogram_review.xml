@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/review_unkown_large"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/program_name"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_alignBottom="@id/image_review"
+                android:background="#99000000"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.14"
+                android:text="东方卫视（15台）"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+            <ProgressBar
+                android:id="@+id/play_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/play_progress_bar"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:id="@+id/play_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:letterSpacing="-0.01"
+                android:text="王牌对大牌"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
