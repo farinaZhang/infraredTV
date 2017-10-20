@@ -23,6 +23,7 @@ import com.carlos.voiceline.mylibrary.VoiceLineView;
 import com.sample.inferentdemo.MyApplication;
 import com.sample.inferentdemo.R;
 import com.sample.inferentdemo.data.MainContentData;
+import com.sample.inferentdemo.data.MainContentDataEntity;
 import com.sample.inferentdemo.data.MainViewType;
 import com.sample.inferentdemo.data.PlayContentEntity;
 import com.sample.inferentdemo.data.PlaySearchData;
@@ -353,23 +354,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
         mSubMainView.setHandler(mHandler);
         mSubMainView.InitView(null);
-        mSubMainView.setListener(new MainShowView.OnMyHListClickLister() {
-            @Override
-            public void onMyHListClick(int position) {
-                StartMainTabSearchFunction(position);
-            }
-        });
-
 
         mSubSearchView.setHandler(mHandler);
         mSubSearchView.InitView();
         mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_LOAD_HISTORY);
 
-
-        String[] search_result_title = mContext.getResources().getStringArray(R.array.search_type_array);
-        mSubSearchResult.setHTitleString(search_result_title);
-        mSubSearchResult.setHandler(mHandler);
         mSubSearchResult.InitView(null);
+        mSubSearchResult.setHandler(mHandler);
     }
 
     private void readStingFromFile() {
@@ -469,7 +460,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                                             List<PlayTimeEntity> date0 = new ArrayList<PlayTimeEntity>();
                                             for (int i = 0; i < data.length(); i++) {
 
-                                                int isplaying =0; //0:未播放，1：正在播放，2：已播放
+                                                int isplaying = 0; //0:未播放，1：正在播放，2：已播放
                                                 JSONObject tmp = data.getJSONObject(i);
 
                                                 String s_time = tmp.getString("start_time");
@@ -500,10 +491,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                                                         Log.d(TAG_SEARCH, "正在播放 entity.time :" + entity.time);
 
                                                         isplaying = 1;
-                                                    }else if(curDate<ds){
-                                                       //0:未播放，1：正在播放，2：已播放
+                                                    } else if (curDate < ds) {
+                                                        //0:未播放，1：正在播放，2：已播放
                                                         isplaying = 0;
-                                                    }else{
+                                                    } else {
                                                         isplaying = 2;
                                                     }
 
@@ -583,17 +574,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                                     } else {
                                         mSubSearchResult.setSelectedTab(0);
                                     }
+                                }else{
+                                    ShowToast("数据为空，请检查网络");
                                 }
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            ShowToast("请输入你要查找的节目或频道");
+                            ShowToast("数据为空，请检查网络");
                         } catch (ParseException e) {
                             e.printStackTrace();
-                            ShowToast("请输入你要查找的节目或频道");
-                        }catch(IndexOutOfBoundsException e){
+                            ShowToast("数据为空，请检查网络");
+                        } catch (IndexOutOfBoundsException e) {
                             e.printStackTrace();
-                            ShowToast("请输入你要查找的节目或频道");
+                            ShowToast("数据为空，请检查网络");
                         }
                         break;
                     }
@@ -602,7 +595,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                         break;
                     }
                     case MessageConst.CUSTOM_GET_MAIN_DATA_OK: {
-                        updataMainViewData(msg.obj);
+                        updataMainViewData(msg.obj, msg.arg1);
                         break;
                     }
                     case MessageConst.CLENT_ACTION_LOAD_HISTORY: {
@@ -626,6 +619,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                     case MessageConst.CLENT_ACTION_UPDATE_HISTORY_VIEW: {
                         List<String> strHistory = (List<String>) msg.obj;
                         mSubSearchView.reloadHistory(strHistory);
+                        break;
+                    }
+                    case MessageConst.CLENT_ACTION_GET_MAIN_DATA: {
+                        int index = msg.arg1;
+                        StartMainTabSearchFunction(index);
                         break;
                     }
                 }
@@ -1014,7 +1012,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     //点击主页tab 标题页各项
     private void StartMainTabSearchFunction(final int tab_index) {
         if (1 == tab_index) {
-            quaryEaraData();
+            quaryEaraData(tab_index);
             return;
         }
 
@@ -1044,7 +1042,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 long currtime = System.currentTimeMillis();
 
                 String str_start = String.valueOf(currtime);
-                String str_end = String.valueOf(currtime+60000);
+                String str_end = String.valueOf(currtime + 60000);
 
                 String str_send = mContext.getResources().getStringArray(R.array.play_type_array)[tab_index];
                 formData.add(new BasicNameValuePair("program_subtype", str_send));
@@ -1057,6 +1055,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_MAIN_DATA_OK;
                 msg.obj = result;
+                msg.arg1 = tab_index;
                 mHandler.sendMessage(msg);
             }
         }).start();
@@ -1064,7 +1063,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     }
 
     //获取本地首页
-    private void quaryEaraData() {
+    private void quaryEaraData(final int index) {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -1090,7 +1089,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 long currtime = System.currentTimeMillis();
 
                 String str_start = String.valueOf(currtime);
-                String str_end = String.valueOf(currtime+60000);
+                String str_end = String.valueOf(currtime + 60000);
 
                 String str_send = "上海";
                 formData.add(new BasicNameValuePair("area", str_send));
@@ -1103,6 +1102,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_MAIN_DATA_OK;
                 msg.obj = result;
+                msg.arg1 = index;
                 mHandler.sendMessage(msg);
 
             }
@@ -1178,7 +1178,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         }
     }
 
-    private void updataMainViewData(Object obj) {
+    private void updataMainViewData(Object obj, final int index) {
         String str_obj = (String) obj;
         JSONObject temp = null;
 
@@ -1190,11 +1190,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                 if (json_data.has("data_obj")) {
                     if (MainContentData.playData == null) {
-                        MainContentData.playData = new ArrayList<PlayContentEntity>();
+                        MainContentData.playData = new ArrayList<MainContentDataEntity>();
                     } else {
-                        MainContentData.playData.clear();
+                        int size = MainContentData.playData.size();
+                        for (int i = 0; i < size; i++) {
+                            if (MainContentData.playData.get(i).index == index) {
+                                MainContentData.playData.remove(i);
+                                break;
+                            }
+                        }
                     }
-
                     long systime = System.currentTimeMillis();
                     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                     Date d1 = new Date(systime);
@@ -1206,6 +1211,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                         ShowToast("没有找到您要搜索的内容");
 
                     } else {
+                        MainContentDataEntity contententity = new MainContentDataEntity();
+                        List<PlayContentEntity> listdata = new ArrayList<PlayContentEntity>();
                         for (int k = 0; k < data_data.length(); k++) {
                             JSONArray data = data_data.getJSONObject(k).getJSONArray("result");
 
@@ -1238,17 +1245,25 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                                     long curDate = new Date(System.currentTimeMillis()).getTime();
                                     entity.time = (int) (((curDate - ds) * 100) / (de - ds));
                                 } catch (Exception e) {
-
+                                    ShowToast("没有找到您要搜索的内容");
                                 }
-                                MainContentData.playData.add(entity);
+                                listdata.add(entity);
                             }
                         }
+
+                        contententity.index = index;
+                        contententity.ContentData = listdata;
+                        MainContentData.playData.add(contententity);
+
                     }
-                    mSubMainView.setData(MainContentData.playData);
+                    mSubMainView.changeView();
+                }else{
+                    ShowToast("数据为空，请检查网络");
                 }
             }
         } catch (JSONException e) {
             e.printStackTrace();
+            ShowToast("没有找到您要搜索的内容");
         }
 
     }

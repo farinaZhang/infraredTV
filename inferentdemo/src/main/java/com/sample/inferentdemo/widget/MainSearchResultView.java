@@ -2,20 +2,19 @@ package com.sample.inferentdemo.widget;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.os.Handler;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sample.inferentdemo.R;
-import com.sample.inferentdemo.adapter.HorizontalListViewAdapter;
-import com.sample.inferentdemo.adapter.PlayContentRecycleAdapter;
 import com.sample.inferentdemo.data.PlayContentEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -30,21 +29,18 @@ public class MainSearchResultView extends RelativeLayout implements View.OnClick
     @InjectView(R.id.play_time)
     TextView mPlayingTime;
 
-    @InjectView(R.id.play_recyleview)
-    RecyclerView mPlayRecyleView;
+   
 
-    /*@InjectView(R.id.playdataview)
-    PlayDateView mSubSearchPlayDate;//搜索结果播放日期 */
-    @InjectView(R.id.playdataview)
-    PlayDateViewExt mSubSearchPlayDate;//搜索结果播放日期
-
-
+    @InjectView(R.id.view_pager)
+    ViewPager mViewPager;
 
     private Context mContext;
     private Handler mHandler;
-    private HorizontalListViewAdapter mPlayTypeAdapter;
-    private PlayContentRecycleAdapter mPlayContentAdapter;
-    private String[] mTitle;
+
+    private List<View> mList;
+    private PlayContentRecycleView mPlayContentView;
+    private PlayDateView mPlayDataView;
+    private MyPagerAdapter mAdapter;
 
 
     public MainSearchResultView(Context context) {
@@ -65,21 +61,31 @@ public class MainSearchResultView extends RelativeLayout implements View.OnClick
 
     }
 
-    public void setHTitleString(String[] title){
-        mTitle = title;
-    }
-
     public void InitView(List<PlayContentEntity> data){
 
         //初始化 tab 栏电视节目种类
-        setSelectedTab(0);
 
-        mPlayTypeAdapter = new HorizontalListViewAdapter(mContext, mTitle);
+
+        mList = new ArrayList<View>();
+        mPlayContentView = new PlayContentRecycleView(mContext);
+        mPlayContentView.initView();
+        mList.add(mPlayContentView);
+        mPlayDataView = new PlayDateView(mContext);
+        mPlayDataView.InitView();
+        mList.add(mPlayDataView);
+
+        PagerAdapter mAdapter= new MyPagerAdapter();
+        mViewPager.setAdapter(mAdapter);
+
+        mViewPager.addOnPageChangeListener(MyPagerChangeListener);
+
+        setSelectedTab(0);
+        mViewPager.setCurrentItem(0);
 
         mPlayingTab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                setSelectedTab(0);
+                mViewPager.setCurrentItem(0);
 
             }
         });
@@ -87,25 +93,14 @@ public class MainSearchResultView extends RelativeLayout implements View.OnClick
         mPlayingTime.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                setSelectedTab(1);
+                mViewPager.setCurrentItem(1);
 
             }
         });
-
-
-        //初始化播放节目，搜索结果的列表
-        mPlayRecyleView.setLayoutManager(new GridLayoutManager(mContext,4));//打大屏4列
-        mPlayRecyleView.addItemDecoration(new SpacesItemDecoration(4,13));
-        mPlayContentAdapter = new PlayContentRecycleAdapter(mContext,data);
-        mPlayRecyleView.setAdapter(mPlayContentAdapter);
-
-        //初始化播放时间画面
-        mSubSearchPlayDate.setVisibility(View.GONE);
-        mSubSearchPlayDate.InitView();
     }
     public void setHandler(Handler h){
         mHandler = h;
-        mSubSearchPlayDate.setHandler(mHandler);
+        mPlayDataView.setHandler(mHandler);
     }
 
     @Override
@@ -115,52 +110,70 @@ public class MainSearchResultView extends RelativeLayout implements View.OnClick
 
     public void setData(List<PlayContentEntity> data){
         //更新数据，并刷新
-        mPlayContentAdapter.setData(data);
+        mPlayContentView.setData(data);
     }
 
     //更新播放日期数据
     public void updataPlayDate(){
-        mSubSearchPlayDate.setCurSelPage(0);
-
-        //mSubSearchPlayDate.updateTabTitle();
+        mPlayDataView.setCurSelPage(0);
     }
-
-    private class SpacesItemDecoration extends RecyclerView.ItemDecoration {
-        private int space;
-        private int spanCount;
-
-        public SpacesItemDecoration(int spanCount, int space) {
-            this.spanCount = spanCount;
-            this.space = space;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view,
-                                   RecyclerView parent, RecyclerView.State state) {
-            int position = parent.getChildAdapterPosition(view);
-
-            if(position==0 || position%spanCount !=0) {
-                outRect.right = space;
-            }
-
-            // Add top margin only for the first item to avoid double space between items
-
-        }
-    }
-
     public void setSelectedTab(int position){
 
         if(position == 0){
             mPlayingTab.setTextColor(Color.rgb(0x2a,0xa1,0xde));
             mPlayingTime.setTextColor(Color.rgb(0x33,0x33,0x33));
-            mPlayRecyleView.setVisibility(View.VISIBLE);
-            mSubSearchPlayDate.setVisibility(View.GONE);
+
         }else{
             mPlayingTab.setTextColor(Color.rgb(0x33,0x33,0x33));
             mPlayingTime.setTextColor(Color.rgb(0x2a,0xa1,0xde));
-            mPlayRecyleView.setVisibility(View.GONE);
-            mSubSearchPlayDate.setVisibility(View.VISIBLE);
-            mSubSearchPlayDate.updateRecycleView();
         }
+    }
+
+    private ViewPager.OnPageChangeListener MyPagerChangeListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int i, float v, int i1) {
+
+        }
+
+        @Override
+        public void onPageSelected(int i) {
+            setSelectedTab(i);
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int i) {
+
+        }
+    };
+
+    private class MyPagerAdapter extends PagerAdapter{
+
+        @Override
+        public boolean isViewFromObject(View arg0, Object arg1) {
+        // TODO Auto-generated method stub
+        return arg0 == arg1;
+        }
+
+        @Override
+        public int getCount() {
+            // TODO Auto-generated method stub
+        return mList.size();
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position,
+                                 Object object) {
+            // TODO Auto-generated method stub
+             container.removeView(mList.get(position));
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+             // TODO Auto-generated method stub
+            container.addView(mList.get(position));
+
+            return mList.get(position);
+        }
+
     }
 }

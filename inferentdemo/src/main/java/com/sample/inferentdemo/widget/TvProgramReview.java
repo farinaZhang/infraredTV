@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,7 +36,7 @@ import java.util.List;
 /**
  * Created by FarinaZhang on 2017/7/26.
  */
-public class TvProgramReview extends RelativeLayout{
+public class TvProgramReview extends RelativeLayout {
     private final String TAG_SEARCH = "TAG_SEARCH";
     private ImageView mImageReview;
     private TextView mProgramName;
@@ -44,16 +45,17 @@ public class TvProgramReview extends RelativeLayout{
     private Context mContext;
     private int mImageWidth = 200;
     private int mImageHeight = 200;
-    private int mImageId=0;
+    private int mImageId = 0;
     private Handler mHandler;
+    private int curIndex = 0;
 
 
     public TvProgramReview(Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public TvProgramReview(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public TvProgramReview(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -61,22 +63,22 @@ public class TvProgramReview extends RelativeLayout{
 
         mContext = context;
 
-        View myView = LayoutInflater.from(context).inflate(R.layout.layout_tvtrogram_review,null);
-        myView.setLayoutParams(new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT));
+        View myView = LayoutInflater.from(context).inflate(R.layout.layout_tvtrogram_review, null);
+        myView.setLayoutParams(new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
         this.addView(myView);
 
-        mImageReview = (ImageView)myView.findViewById(R.id.image_review);
-        mProgramName = (TextView)myView.findViewById(R.id.program_name);
-        mProgressBar = (ProgressBar)myView.findViewById(R.id.play_progress);
-        mPlayName = (TextView)myView.findViewById(R.id.play_name);
+        mImageReview = (ImageView) myView.findViewById(R.id.image_review);
+        mProgramName = (TextView) myView.findViewById(R.id.program_name);
+        mProgressBar = (ProgressBar) myView.findViewById(R.id.play_progress);
+        mPlayName = (TextView) myView.findViewById(R.id.play_name);
 
         TypedArray mTypes = context.obtainStyledAttributes(attrs, R.styleable.playImg);
 
         mImageWidth = mTypes.getDimensionPixelSize(R.styleable.playImg_imageWidth, 200);
         mImageHeight = mTypes.getDimensionPixelSize(R.styleable.playImg_imageHeight, 200);
-        RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams)mImageReview.getLayoutParams();
-        lp.width=mImageWidth;
-        lp.height=mImageHeight;
+        RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) mImageReview.getLayoutParams();
+        lp.width = mImageWidth;
+        lp.height = mImageHeight;
         mImageReview.setLayoutParams(lp);
 
         mImageReview.setImageResource(mImageId);
@@ -87,33 +89,43 @@ public class TvProgramReview extends RelativeLayout{
             @Override
             public void onClick(View v) {
                 //play the select progress
-                ShowToast("开始播放"+mPlayName.getText().toString());
+                //ShowToast("开始播放" + mPlayName.getText().toString());
+
+                if (true) {
+                    //打开弹窗功能
+                    String sendText = mProgramName.getText().toString();
+
+                    //sendText = "CCTV";
+                    GetDataFromServer(sendText);
+
+                }
             }
         });
 
-        mImageReview.setOnLongClickListener(new OnLongClickListener() {
+        /*mImageReview.setOnLongClickListener(new OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                if(true){
+                if (true) {
                     //打开弹窗功能
                     String sendText = mProgramName.getText().toString();
+                    sendText = "湖南卫视";
                     GetDataFromServer(sendText);
                     return true;
                 }
                 return false;
             }
-        });
+        });*/
 
     }
 
     //设置节目预览图片
-    public void setImageReviewPictrue(String str_ImageId,int defImg){
+    public void setImageReviewPictrue(String str_ImageId, int defImg) {
         Drawable imgdef = mContext.getResources().getDrawable(defImg);
 
 
-        if(str_ImageId.equals("")){
+        if (str_ImageId.equals("")) {
             mImageReview.setImageDrawable(imgdef);
-        }else {
+        } else {
             String str_imgUrl = "http://cn.olami.ai/ImageService/epgprogram_get_image?id=" + str_ImageId;
             ImageLoaderUtil.loadImageAsync(mImageReview, str_imgUrl, null, imgdef, mImageWidth);
         }
@@ -121,21 +133,21 @@ public class TvProgramReview extends RelativeLayout{
     }
 
     //设置台名及台号
-    public void setProgramName(String name){
+    public void setProgramName(String name) {
         mProgramName.setText(name);
     }
 
     //设置节目播放进度
-    public void setPlayProgress(int value){
+    public void setPlayProgress(int value) {
         mProgressBar.setProgress(value);
     }
 
     //设置节目名
-    public void setPlayName(String name){
+    public void setPlayName(String name) {
         mPlayName.setText(name);
     }
 
-    private void ShowToast(String message){
+    private void ShowToast(String message) {
         //Toast.makeText(mContext,message, Toast.LENGTH_SHORT).show();
 
         CustomOlaTipDialog dialog = CustomOlaTipDialog.createDialog(mContext);
@@ -143,8 +155,8 @@ public class TvProgramReview extends RelativeLayout{
         dialog.show();
     }
 
-    private void initHandler(){
-        mHandler = new Handler(){
+    private void initHandler() {
+        mHandler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 switch (msg.what) {
@@ -173,60 +185,102 @@ public class TvProgramReview extends RelativeLayout{
 
                                     } else {
                                         for (int k = 0; k < data_data.length(); k++) {
-                                            JSONArray data = data_data.getJSONObject(k).getJSONArray("result");
+                                            SimpleDateFormat dFormat_s = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //"2017-09-26 17:00:00"
+                                            Date time_date = new Date(Long.parseLong(data_data.getJSONObject(k).getString("date")));
 
-                                            for (int i = 0; i < data.length(); i++) {
+                                            Date curDate_s = new Date(System.currentTimeMillis());//获取当前时间
 
-                                                int isplaying =0; //0:未播放，1：正在播放，2：已播放
-                                                JSONObject tmp = data.getJSONObject(i);
 
-                                                String s_time = tmp.getString("start_time");
-                                                String e_time = tmp.getString("end_time");
-                                                SimpleDateFormat dFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //"2017-09-26 17:00:00"
-                                                try {
-                                                    long ds = dFormat.parse(s_time).getTime();
-                                                    long de = dFormat.parse(e_time).getTime();
-                                                    long curDate = new Date(System.currentTimeMillis()).getTime();
+                                            String date_get = dFormat_s.format(time_date).toString().substring(0, 10);//获取的数据的日期
 
-                                                    if (curDate >= ds && curDate < de) {
-                                                        isplaying = 1;
-                                                    }else if(curDate<ds){
-                                                        //0:未播放，1：正在播放，2：已播放
-                                                        isplaying = 0;
-                                                    }else{
-                                                        isplaying = 2;
+                                            String date_cur = dFormat_s.format(curDate_s).toString().substring(0, 10);  //获取当前日期
+                                            try {
+                                                Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(date_get);
+                                                long unixTimestamp1 = date1.getTime();
+
+                                                Date date2 = new SimpleDateFormat("yyyy-MM-dd").parse(date_cur);
+                                                long unixTimestamp2 = date2.getTime();
+
+                                                Log.d(TAG_SEARCH, "获取的数据的当前日期时间 :" + date_get);
+                                                Log.d(TAG_SEARCH, "系统的日期时间 :" + date_cur);
+                                                long m = (unixTimestamp1 - unixTimestamp2) / (24 * 3600 * 1000);
+                                                Log.d(TAG_SEARCH, " 获取的数据和今天的日期的差距为" + m);
+
+                                                if(m!=0){
+                                                    //不是当天的节目
+                                                    break;
+                                                }
+                                            //try {
+                                                JSONArray data = data_data.getJSONObject(k).getJSONArray("result");
+                                                for (int i = 0; i < data.length(); i++) {
+
+                                                    int isplaying = 0; //0:未播放，1：正在播放，2：已播放
+                                                    JSONObject tmp = data.getJSONObject(i);
+
+                                                    String s_time = tmp.getString("start_time");
+                                                    String e_time = tmp.getString("end_time");
+                                                    SimpleDateFormat dFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //"2017-09-26 17:00:00"
+                                                    try {
+                                                        long ds = dFormat.parse(s_time).getTime();
+                                                        long de = dFormat.parse(e_time).getTime();
+                                                        long curDate = new Date(System.currentTimeMillis()).getTime();
+
+                                                        if (curDate >= ds && curDate < de) {
+                                                            isplaying = 1;
+                                                            curIndex = i;
+                                                        } else if (curDate < ds) {
+                                                            //0:未播放，1：正在播放，2：已播放
+                                                            isplaying = 0;
+                                                        } else {
+                                                            isplaying = 2;
+                                                        }
+                                                    } catch (Exception e) {
+                                                        ShowToast("请输入你要查找的节目或频道");
                                                     }
-                                                } catch (Exception e) {
-                                                    ShowToast("请输入你要查找的节目或频道");
+
+                                                    PlayTimeEntity entityTime = new PlayTimeEntity();
+                                                    entityTime.channel = tmp.getString("channel_title");
+                                                    entityTime.name = tmp.getString("program_title");
+                                                    String str_time = tmp.getString("start_time").substring(11, 16);
+                                                    entityTime.time = str_time;
+                                                    entityTime.isplaying = isplaying;
+
+                                                    channel_name = entityTime.channel;
+                                                    ChannelPlayListData.playData.add(entityTime);
                                                 }
 
-                                                PlayTimeEntity entityTime = new PlayTimeEntity();
-                                                entityTime.channel = tmp.getString("channel_title");
-                                                entityTime.name = tmp.getString("program_title");
-                                                String str_time = tmp.getString("start_time").substring(11, 16);
-                                                entityTime.time = str_time;
-                                                entityTime.isplaying = isplaying;
-
-                                                channel_name = entityTime.channel;
-                                                ChannelPlayListData.playData.add(entityTime);
+                                            }catch(Exception e) {
+                                                ShowToast("请输入你要查找的节目或频道");
                                             }
                                         }
-
                                     }
 
                                     //更新list 列表
-                                    if(ChannelPlayListData.playData.size()>0){
-                                        PlayListPopDialog dialog =  PlayListPopDialog.createDialog(mContext,ChannelPlayListData.playData);
-                                        String title =channel_name+"今日节目单";
+                                    if (ChannelPlayListData.playData.size() > 0) {
+                                        PlayListPopDialog dialog = PlayListPopDialog.createDialog(mContext, ChannelPlayListData.playData);
+                                        String title = channel_name + "今日节目单";
                                         dialog.setTitle(title);
+                                        dialog.setSelectIndex(curIndex);
+
+                                        dialog.setListener(new PlayListPopDialog.PlayListPopDialogListener() {
+                                            @Override
+                                            public void onItemClick(int positon) {
+                                                String name = ChannelPlayListData.playData.get(positon).name;
+                                                ShowToast("马上为您播放："+name);
+                                            }
+                                        });
                                         dialog.show();
+                                    }else{
+                                        ShowToast("没有找到今日节目单");
                                     }
+                                }else{
+                                    ShowToast("数据为空，请检查网络");
                                 }
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
                             ShowToast("请输入你要查找的节目或频道");
-                        }catch(IndexOutOfBoundsException e){
+                        } catch (IndexOutOfBoundsException e) {
                             e.printStackTrace();
                             ShowToast("请输入你要查找的节目或频道");
                         }
@@ -237,45 +291,66 @@ public class TvProgramReview extends RelativeLayout{
         };
     }
 
-    private void GetDataFromServer(final String temp){
+    private void GetDataFromServer(final String temp) {
 
-            //开始搜索该频道的节目列表显示
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    String appSecret = "a72966d006c04442a52409019ffd769a";
-                    String appKey = "879f09a3c19142458703467db7f0449a";
-                    String api = "epg";
+        //开始搜索该频道的节目列表显示
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String appSecret = "a72966d006c04442a52409019ffd769a";
+                String appKey = "879f09a3c19142458703467db7f0449a";
+                String api = "epg";
 
-                    String base_url = "https://cn.olami.ai/cloudservice/api/epg";
-                    //具体的接口访问url
-                    String url = base_url + "/program";
-                    long time = System.currentTimeMillis();
-                    String sign = sign(appKey, api, time, appSecret);
+                String base_url = "https://cn.olami.ai/cloudservice/api/epg";
+                //具体的接口访问url
+                String url = base_url + "/program";
+                long curtime = System.currentTimeMillis();
+                String sign = sign(appKey, api, curtime, appSecret);
 
-                    List<NameValuePair> formData = new ArrayList<NameValuePair>();
+                List<NameValuePair> formData = new ArrayList<NameValuePair>();
 
-                    //鉴权所需参数
-                    formData.add(new BasicNameValuePair("appkey", appKey));
-                    formData.add(new BasicNameValuePair("api", api));
-                    formData.add(new BasicNameValuePair("sign", sign));
-                    formData.add(new BasicNameValuePair("timestamp", String.valueOf(time)));
-                    //发送参数
+                //鉴权所需参数
+                formData.add(new BasicNameValuePair("appkey", appKey));
+                formData.add(new BasicNameValuePair("api", api));
+                formData.add(new BasicNameValuePair("sign", sign));
+                formData.add(new BasicNameValuePair("timestamp", String.valueOf(curtime)));
+                //发送参数
+                //获取当前频道当天的节目，正在播出和未播出
 
-                    formData.add(new BasicNameValuePair("channel", temp));
+                /*Calendar cal_s = Calendar.getInstance();
+                cal_s.set(Calendar.HOUR_OF_DAY, 0);
+                cal_s.set(Calendar.SECOND, 0);
+                cal_s.set(Calendar.MINUTE, 0);
+                cal_s.set(Calendar.MILLISECOND, 0);
+                long s_time = cal_s.getTimeInMillis();
 
-                    String result = HttpUtil.sendPostCommand(mContext, url, formData);
-                    System.out.println("testResource:" + result);
+                Calendar cal_e = Calendar.getInstance();
+                cal_e.set(Calendar.HOUR_OF_DAY, 23);
+                cal_e.set(Calendar.SECOND, 59);
+                cal_e.set(Calendar.MINUTE, 59);
+                cal_e.set(Calendar.MILLISECOND, 0);
+                long e_time = cal_e.getTimeInMillis();*/
 
-                    Message msg = new Message();
-                    msg.what = MessageConst.CUSTOM_GET_SEARCH_DATA_OK;
-                    msg.obj = result;
-                    mHandler.sendMessage(msg);
+                formData.add(new BasicNameValuePair("channel", temp));
+                /*formData.add(new BasicNameValuePair("start_time", String.valueOf(s_time)));
+                formData.add(new BasicNameValuePair("end_time", String.valueOf(e_time)));*/
 
-                }
-            }).start();
+                String result = HttpUtil.sendPostCommand(mContext, url, formData);
+                //Log.d("TVprogramReview", "获取当前频道当天的节目: channl:" + temp + "  start_time:" + s_time + "  end_time:" + e_time);
+                System.out.println("testResource:" + result);
 
+                Message msg = new Message();
+                msg.what = MessageConst.CUSTOM_GET_SEARCH_DATA_OK;
+                msg.obj = result;
+                mHandler.sendMessage(msg);
+
+            }
         }
+
+        ).start();
+
+    }
+
     private String sign(String appKey, String api, long timestamp, String appSecret) {
         StringBuilder ss = new StringBuilder();
         ss.append(appSecret);

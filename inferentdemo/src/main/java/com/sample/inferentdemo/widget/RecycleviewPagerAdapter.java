@@ -9,9 +9,9 @@ import android.view.View;
 import java.util.List;
 
 public class RecycleviewPagerAdapter extends PagerAdapter {
-    private List<PlayDateRecycleView> pageViews;
+    private List<PlayContentRecycleView> pageViews;
 
-    public RecycleviewPagerAdapter(List<PlayDateRecycleView> list)
+    public RecycleviewPagerAdapter(List<PlayContentRecycleView> list)
     {
         pageViews = list;
     }

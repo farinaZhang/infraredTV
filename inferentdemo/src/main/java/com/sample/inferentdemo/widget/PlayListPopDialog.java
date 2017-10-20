@@ -28,21 +28,18 @@ import java.util.List;
  */
 public class PlayListPopDialog extends Dialog {
     public interface PlayListPopDialogListener {
-        public void onCancelItemClick();
-
         public void onItemClick(int positon);
-
     }
 
     private PlayListPopDialogListener listener = null;
     private static ListView mListView;
-    private static TextView mCancel;
     private static TextView mTitle;
 
     private static PlayListPopDialog dialog;
     private static List<PlayTimeEntity> mlistData = new ArrayList<PlayTimeEntity>();
     private static boolean mHasTitle = false;
     private static int mListColor = Color.rgb(0x33, 0xad, 0xce);
+    private static Context mContext;
 
 
     public PlayListPopDialog(Context context) {
@@ -55,6 +52,8 @@ public class PlayListPopDialog extends Dialog {
 
     public static PlayListPopDialog createDialog(Context context,
                                                  List<PlayTimeEntity> listData) {
+
+        mContext = context;
         mlistData = listData;
         dialog = new PlayListPopDialog(context);
 
@@ -64,8 +63,7 @@ public class PlayListPopDialog extends Dialog {
 
         dialog.getWindow().setBackgroundDrawable(context.getResources().getDrawable(R.drawable.dialog_box_content));
         Window win = dialog.getWindow();
-        win.getDecorView().setPadding(0, 0, 0, 0);
-        WindowManager.LayoutParams lp = win.getAttributes();
+        win.getDecorView().setPadding(20, 20, 20, 20);
 
         //系统屏幕的宽高
         Resources resources = context.getResources();
@@ -74,38 +72,27 @@ public class PlayListPopDialog extends Dialog {
         int win_width = dm.widthPixels;
         int win_height = dm.heightPixels;
 
-        lp.width = win_width / 2;
+        WindowManager.LayoutParams lp = win.getAttributes();
+        lp.width = win_width;
         lp.height = win_height / 2;
-        lp.gravity = Gravity.CENTER;
+        lp.gravity = Gravity.BOTTOM;
         win.setAttributes(lp);
+        win.setWindowAnimations(R.style.style_dialog_anim);
 
         mTitle = (TextView) dialog.findViewById(R.id.title);
         mListView = (ListView) dialog.findViewById(R.id.view_list);
-        mCancel = (TextView) dialog.findViewById(R.id.cancel);
 
         myListAdapter adapter = dialog.new myListAdapter(dialog.getContext());
         mListView.setAdapter(adapter);
-
         dialog.setCanceledOnTouchOutside(true);
+
         return dialog;
     }
-
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         if (dialog == null)
             return;
-
-        mCancel.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (listener != null) {
-                    listener.onCancelItemClick();
-                }
-                dialog.cancel();
-            }
-        });
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -133,12 +120,14 @@ public class PlayListPopDialog extends Dialog {
         mTitle.setText(title);
     }
 
+    public void setSelectIndex(int index){
+        mListView.setSelection(index);
+    }
+
     private class myListAdapter extends BaseAdapter {
         private LayoutInflater mInflater;
-        private Context mContext;
 
         public myListAdapter(Context context) {
-            mContext = context;
             mInflater = LayoutInflater.from(context);
         }
 
@@ -211,7 +200,8 @@ public class PlayListPopDialog extends Dialog {
             public TextView state;
             public TextView name;
         }
-
     }
+
+
 
 }

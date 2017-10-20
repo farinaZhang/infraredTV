@@ -29,5 +29,6 @@ public class MessageConst {
     public static final int CLENT_ACTION_UPDATE_HISTORY_VIEW = 20010;
     public static final int CLENT_END_RECOGNIZER = 20011;
     public static final int CLENT_ACTION_CANCEL_TO_ACTIVITY = 20012;
+    public static final int CLENT_ACTION_GET_MAIN_DATA = 20013;
          
 }

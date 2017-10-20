@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sample.inferentdemo.R;
@@ -45,6 +46,7 @@ public class PlayTimeTabAdapter extends BaseAdapter{
 			holder = new ViewHolder();
 			convertView = mInflater.inflate(R.layout.layout_adapter_play_time_tab, null);
 			holder.mTitle=(TextView)convertView.findViewById(R.id.text_list_item);
+			holder.mFrame = (RelativeLayout)convertView.findViewById(R.id.item_frame);
 			convertView.setTag(holder);
 		}else{
 			holder=(ViewHolder)convertView.getTag();
@@ -57,11 +59,18 @@ public class PlayTimeTabAdapter extends BaseAdapter{
 			holder.mTitle.setBackgroundColor(Color.rgb(0xff,0xff,0xff));
 		}
 		holder.mTitle.setText(mTitles[position]);
+
+		int win_width = mContext.getResources().getDisplayMetrics().widthPixels;
+		RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams)holder.mFrame.getLayoutParams();
+		lp.width = win_width/7;
+		holder.mFrame.setLayoutParams(lp);
+
 		return convertView;
 	}
 
 	private static class ViewHolder {
 		private TextView mTitle ;
+		private RelativeLayout mFrame;
 	}
 	public void setSelectIndex(int i){
 		selectIndex = i;

@@ -33,7 +33,7 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:layout_marginRight="98dp"
+        android:layout_marginRight="50dp"
         android:layout_toLeftOf="@id/state"
         android:layout_toRightOf="@id/time"
         android:ellipsize="marquee"

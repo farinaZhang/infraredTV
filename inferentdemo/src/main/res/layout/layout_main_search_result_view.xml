@@ -51,31 +51,16 @@
         android:layout_below="@id/title_view"
         android:src="#cccccc" />
 
-    <RelativeLayout
+    <android.support.v4.view.ViewPager android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/line"
         android:background="#ffffff"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp">
+        >
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/play_recyleview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="none" />
-    </RelativeLayout>
+       
+    </android.support.v4.view.ViewPager>
 
-    <!--<com.sample.inferentdemo.widget.PlayDateView
-        android:id="@+id/playdataview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/line"
-        android:background="#ffffff" />-->
-    <com.sample.inferentdemo.widget.PlayDateViewExt
-        android:id="@+id/playdataview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/line"
+    
         android:background="#ffffff" />
 </RelativeLayout>

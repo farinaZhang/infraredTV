@@ -1,5 +1,17 @@
 <resources>
 
     <!-- Base application theme. -->
+    <style name="style_dialog_anim" parent="android:Animation">
+        <item name ="android:windowEnterAnimation">@anim/list_dialog_enter_anim</item>
+        <item name ="android:windowExitAnimation">@anim/list_dialog_exit_anim</item>
+    </style>
 
+    <style name="style_radio_button" >
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/main_show_tab_item_width</item>
+        <item name="android:textColor">@color/color_radiobutton</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
 </resources>

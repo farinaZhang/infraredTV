@@ -28,7 +28,8 @@
         <ListView
             android:id="@+id/view_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
             android:layout_below="@id/line"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
@@ -39,17 +40,6 @@
             android:listSelector="#00000000"
             android:scrollbars="none" />
 
-        <TextView
-            android:id="@+id/cancel"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/view_list"
-            android:background="#fff"
-            android:gravity="center"
-            android:text="cancel"
-            android:textColor="#333333"
-            android:textSize="16sp"
-            android:visibility="gone" />
     </RelativeLayout>
 
 </LinearLayout>

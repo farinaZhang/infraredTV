@@ -28,4 +28,6 @@
     <dimen name="keyboard_textsize_number">34sp</dimen>
     <dimen name="keyboard_textsize_text">20sp</dimen>
     <dimen name="history_spacing">10dp</dimen>
+
+    <dimen name="main_show_tab_item_width">74dp</dimen>
 </resources>

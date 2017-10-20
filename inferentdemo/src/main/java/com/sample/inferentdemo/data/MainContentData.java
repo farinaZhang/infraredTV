@@ -1,6 +1,5 @@
 package com.sample.inferentdemo.data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,5 +8,5 @@ import java.util.List;
  */
 public class MainContentData {
 
-    public static List<PlayContentEntity> playData = new ArrayList<PlayContentEntity>();
+    public static List<MainContentDataEntity> playData ;
 }

@@ -16,7 +16,102 @@
             android:layout_height="@dimen/title_tab_item_height"
             android:background="#f5f5f5"
             android:layout_marginLeft="20dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_tab_item_height"
+            android:scrollbars="none"
+            android:background="#f5f5f5"
+            android:id="@+id/horizontalScrollView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="热门"
+                        android:id="@+id/btn1"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="本地"
+                        android:id="@+id/btn2"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="央视"
+                        android:id="@+id/btn3"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="影视"
+                        android:id="@+id/btn4"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="新闻"
+                        android:id="@+id/btn5"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="体育"
+                        android:id="@+id/btn6"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="财经"
+                        android:id="@+id/btn7"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="综艺"
+                        android:id="@+id/btn8"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="生活"
+                        android:id="@+id/btn9"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="科教"
+                        android:id="@+id/btn10"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="音乐"
+                        android:id="@+id/btn11"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="少儿"
+                        android:id="@+id/btn12"
+                        />
+                    <RadioButton
+                        style="@style/style_radio_button"
+                        android:text="其他"
+                        android:id="@+id/btn13"
+                        />
+                </RadioGroup>
+                <!--<ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="100dp"
+                    android:layout_height="4dp"
+                    android:background="#33b5e5"
+                    android:layout_alignParentBottom="true"
+                    />-->
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+
     </RelativeLayout>
+    
 
     <ImageView android:id="@+id/line"
         android:layout_width="match_parent"
@@ -24,19 +119,11 @@
         android:layout_below="@id/title_view"
         android:src="#cccccc" />
 
-    <RelativeLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/line"
-        android:layout_marginTop="15dp"
-        android:background="#ffffff"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp">
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/play_recyleview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="none" />
-    </RelativeLayout>
+        android:background="#ffffff"/>
 
 </RelativeLayout>
