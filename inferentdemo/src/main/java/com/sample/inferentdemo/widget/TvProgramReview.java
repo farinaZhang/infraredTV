@@ -180,7 +180,7 @@ public class TvProgramReview extends RelativeLayout {
                                     JSONArray data_data = json_data.getJSONArray("data_obj");
 
                                     String channel_name = "";
-                                    if (data_data.length() < 1) {
+                                    if (data_data==null ||data_data.length() < 1) {
                                         ShowToast("没有找到您要搜索的内容");
 
                                     } else {
@@ -338,7 +338,10 @@ public class TvProgramReview extends RelativeLayout {
                 String result = HttpUtil.sendPostCommand(mContext, url, formData);
                 //Log.d("TVprogramReview", "获取当前频道当天的节目: channl:" + temp + "  start_time:" + s_time + "  end_time:" + e_time);
                 System.out.println("testResource:" + result);
-
+                if(result==null||result.length()<1){
+                    mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_NO_CONNECT);
+                    return;
+                }
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_SEARCH_DATA_OK;
                 msg.obj = result;

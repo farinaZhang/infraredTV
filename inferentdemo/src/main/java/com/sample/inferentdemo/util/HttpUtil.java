@@ -2,6 +2,8 @@ package com.sample.inferentdemo.util;
 
 import android.content.Context;
 
+import com.sample.inferentdemo.widget.CustomOlaTipDialog;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.ParseException;
@@ -267,4 +269,10 @@ public class HttpUtil {
 		return _sb.toString();
 	}
 
+	public static void showNoConnectToast(Context context) {
+		CustomOlaTipDialog dialog = CustomOlaTipDialog.createDialog(context);
+		dialog.setMessage("请检查网络连接是否正确");
+		dialog.show();
+
+	}
 }

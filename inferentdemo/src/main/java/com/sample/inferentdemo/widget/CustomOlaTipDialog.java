@@ -69,8 +69,6 @@ public class CustomOlaTipDialog extends Dialog {
 				dialog.cancel();
 			}
 		});
-
-		
 	}
 
 	public void setListener(final CustomOlaTipDialogListener listener) {

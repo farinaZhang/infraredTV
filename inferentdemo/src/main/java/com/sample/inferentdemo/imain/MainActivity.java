@@ -277,8 +277,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 break;
             }
 
+
         }
-        ;
+
     }
 
     private int touchYDownInRecording;
@@ -626,6 +627,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                         StartMainTabSearchFunction(index);
                         break;
                     }
+                    case MessageConst.CLENT_ACTION_NO_CONNECT:{
+                        HttpUtil.showNoConnectToast(MainActivity.this);
+                        break;
+                    }
                 }
             }
         };
@@ -827,7 +832,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                 String result = HttpUtil.sendPostCommand(mContext, url, formData);
                 System.out.println("testResource:" + result);
-
+                if(result==null||result.length()<1){
+                    mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_NO_CONNECT);
+                    return;
+                }
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_SEARCH_DATA_OK;
                 msg.obj = result;
@@ -1051,7 +1059,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                 String result = HttpUtil.sendPostCommand(mContext, url, formData);
                 System.out.println("testResource :" + result);
-
+                if(result==null||result.length()<1){
+                    mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_NO_CONNECT);
+                    return;
+                }
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_MAIN_DATA_OK;
                 msg.obj = result;
@@ -1098,7 +1109,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                 String result = HttpUtil.sendPostCommand(mContext, url, formData);
                 System.out.println("testResource:" + result);
-
+                if(result==null||result.length()<1){
+                    mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_NO_CONNECT);
+                    return;
+                }
                 Message msg = new Message();
                 msg.what = MessageConst.CUSTOM_GET_MAIN_DATA_OK;
                 msg.obj = result;
@@ -1138,6 +1152,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 // HttpEntity reqEntity = new UrlEncodedFormEntity(formData, StandardCharsets.UTF_8);
                 String result = HttpUtil.sendPostCommand(mContext, url, formData);
                 System.out.println("testResource:" + result);
+                if(result==null||result.length()<1){
+                    mHandler.sendEmptyMessage(MessageConst.CLENT_ACTION_NO_CONNECT);
+                    return;
+                }
             }
         }).start();
     }
